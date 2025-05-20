@@ -39,11 +39,16 @@ public class Calculadora {
         try {
             Thread.sleep(50);
         } catch (InterruptedException e) {
-            // Manejo de la excepción
         }
+    }
+
+    public int multi(int a, int b) {
+        ans = a * b;
+        return ans;
     }
 
     public void clear() {
         ans = 0;
     }
 }
+
