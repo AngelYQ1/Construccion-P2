@@ -37,9 +37,9 @@ public class Calculadora {
 
     public void operacionOptima() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(50);
         } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
+            // Manejo de la excepción
         }
     }
 
@@ -47,4 +47,3 @@ public class Calculadora {
         ans = 0;
     }
 }
-
