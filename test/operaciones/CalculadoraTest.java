@@ -37,8 +37,14 @@ public class CalculadoraTest {
         assertEquals(esper, result);
     }
 
-    @Test(expected = ArithmeticException.class)
-    public void testDivPorCero() {
+    @Test
+    public void testDiv() {
         calc.div(5, 0);
     }
+
+    @Test(expected = ArithmeticException.class)
+    public void testDivPorCero() {
+        calc.div(5, 3);
+    }
 }
+
