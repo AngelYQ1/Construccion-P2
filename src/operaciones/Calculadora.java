@@ -35,6 +35,14 @@ public class Calculadora {
         return ans;
     }
 
+    public void operacionOptima() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+        }
+    }
+
     public void clear() {
         ans = 0;
     }
