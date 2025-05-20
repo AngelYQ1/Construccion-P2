@@ -39,12 +39,20 @@ public class CalculadoraTest {
 
     @Test
     public void testDiv() {
-        calc.div(5, 0);
+        int result = calc.div(5, 2);
+        int esper = 2;
     }
 
     @Test(expected = ArithmeticException.class)
     public void testDivPorCero() {
-        calc.div(5, 3);
+        calc.div(5, 0);
     }
+
+    @Test(timeout = 100)
+    public void testAlgoritmoOptimo() {
+        calc.operacionOptima();
+    }
+
 }
+
 
