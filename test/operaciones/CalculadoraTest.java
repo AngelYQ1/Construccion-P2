@@ -66,4 +66,13 @@ public class CalculadoraTest {
         System.out.println("método testAlgoritmoOptimo()");
         calc.operacionOptima();
     }
+
+    @Test
+    public void testMulti() {
+        System.out.println("método testMulti()");
+        int result = calc.multi(3, 4);
+        int esper = 12;
+        assertEquals(esper, result);
+    }
+
 }
